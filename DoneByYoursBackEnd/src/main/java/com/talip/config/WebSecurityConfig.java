@@ -1,5 +1,8 @@
-package com.lbc.config;
+package com.talip.config;
 
+import com.talip.security.JwtAuthenticationEntryPoint;
+import com.talip.security.JwtAuthorizationTokenFilter;
+import com.talip.security.service.JwtUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -17,9 +20,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.lbc.security.JwtAuthenticationEntryPoint;
-import com.lbc.security.JwtAuthorizationTokenFilter;
-import com.lbc.security.service.JwtUserDetailsService;
+
 
 @Configuration
 @EnableWebSecurity
@@ -77,7 +78,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/h2-console/**/**").permitAll()
 
                 .antMatchers("/auth/**").permitAll()   // Relaxer CORS
-                .antMatchers("/products/**").permitAll()
+                .antMatchers("/projets/**").permitAll()
+                .antMatchers("/ouvriers/**").permitAll()
                 .anyRequest().authenticated();
 
        httpSecurity

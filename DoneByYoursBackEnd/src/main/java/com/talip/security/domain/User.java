@@ -1,4 +1,4 @@
-package com.lbc.model.security;
+package com.talip.security.domain;
 
 import java.util.Date;
 import java.util.List;

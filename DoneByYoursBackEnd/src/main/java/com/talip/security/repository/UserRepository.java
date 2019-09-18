@@ -1,8 +1,8 @@
-package com.lbc.security.repository;
+package com.talip.security.repository;
 
+import com.talip.security.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.lbc.model.security.User;
 
 
 public interface UserRepository extends JpaRepository<User, Long> {

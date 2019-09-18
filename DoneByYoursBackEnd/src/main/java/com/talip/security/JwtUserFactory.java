@@ -1,4 +1,4 @@
-package com.lbc.security;
+package com.talip.security;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
-import com.lbc.model.security.Authority;
-import com.lbc.model.security.User;
+import com.talip.security.domain.Authority;
+import com.talip.security.domain.User;
 
 public final class JwtUserFactory {
 

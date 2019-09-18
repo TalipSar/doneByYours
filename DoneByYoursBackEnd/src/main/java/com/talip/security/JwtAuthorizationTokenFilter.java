@@ -1,4 +1,4 @@
-package com.lbc.security;
+package com.talip.security;
 
 import java.io.IOException;
 import javax.servlet.FilterChain;

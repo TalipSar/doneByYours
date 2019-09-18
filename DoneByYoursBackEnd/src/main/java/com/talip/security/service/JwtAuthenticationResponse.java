@@ -1,4 +1,4 @@
-package com.lbc.security.service;
+package com.talip.security.service;
 
 import java.io.Serializable;
 

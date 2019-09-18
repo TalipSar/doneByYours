@@ -1,14 +1,15 @@
-package com.lbc.security.service;
+package com.talip.security.service;
 
+import com.talip.security.JwtUserFactory;
+import com.talip.security.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.lbc.model.security.User;
-import com.lbc.security.JwtUserFactory;
-import com.lbc.security.repository.UserRepository;
+import com.talip.security.domain.User;
+
 
 @Service
 public class JwtUserDetailsService implements UserDetailsService {

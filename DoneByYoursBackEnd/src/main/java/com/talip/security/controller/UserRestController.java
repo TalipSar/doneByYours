@@ -1,7 +1,9 @@
-package com.lbc.security.controller;
+package com.talip.security.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.talip.security.JwtTokenUtil;
+import com.talip.security.JwtUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
@@ -10,8 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.lbc.security.JwtTokenUtil;
-import com.lbc.security.JwtUser;
 
 @RestController
 public class UserRestController {

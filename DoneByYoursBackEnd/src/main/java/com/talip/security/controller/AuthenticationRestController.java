@@ -1,4 +1,4 @@
-package com.lbc.security.controller;
+package com.talip.security.controller;
 
 import java.util.Objects;
 
@@ -22,10 +22,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.lbc.security.JwtAuthenticationRequest;
-import com.lbc.security.JwtTokenUtil;
-import com.lbc.security.JwtUser;
-import com.lbc.security.service.JwtAuthenticationResponse;
+import com.talip.security.JwtAuthenticationRequest;
+import com.talip.security.JwtTokenUtil;
+import com.talip.security.JwtUser;
+import com.talip.security.service.JwtAuthenticationResponse;
 
 @RestController
 @CrossOrigin(origins = "*")

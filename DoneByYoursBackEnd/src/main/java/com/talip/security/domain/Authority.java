@@ -1,4 +1,4 @@
-package com.lbc.model.security;
+package com.talip.security.domain;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
